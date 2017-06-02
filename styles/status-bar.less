@@ -3,10 +3,12 @@
 @status-bar-padding: @ui-padding;
 
 .status-bar {
-  font-size: @ui-size;
+  font-family: @main-font;
+  font-size: 12px;
   height: @status-bar-height;
   line-height: @status-bar-height;
-  background-color: @level-3-color;
+  background-color: @grey-1-color;
+  text-shadow: 0px 1px 2px #232323;
 
   .flexbox-repaint-hack {
     padding: 0 @status-bar-padding/2;
@@ -41,5 +43,6 @@
   text-shadow: 0px 1px 2px #333333;
   font-family: @main-font;
   font-size: 12.5px;
+  text-shadow: 0px 1px 2px #232323;
   background-color: @grey-1-color;
 }

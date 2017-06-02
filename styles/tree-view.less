@@ -1,7 +1,9 @@
 @tree-view-height: @ui-line-height;
 
 .tree-view {
-  font-size: @ui-size;
+  font-family: @main-font;
+  font-size: 11.5px;
+  text-shadow: 0px 1px 2px #232323;
   background: @tree-view-background-color;
 
   .project-root.project-root {
@@ -16,6 +18,7 @@
 
   .selected:before {
     background: @tree-view-background-selected-color;
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.35);
   }
 }
 
@@ -76,21 +79,6 @@
 
 .directory  .header  .icon::before {
   display: none;
-}
-
-// Active tree-view marker --------------
-
-.tree-view {
-  font-family: @main-font;
-  font-size: 11.5px;
-  text-shadow: 0px 1px 2px #232323;
-  color: @text-color;
-  background-color: @tree-view-background-color;
-
-  .selected:before {
-      background: @background-color-selected;
-      box-shadow: inset 0px 1px 2px rgba(0,0,0,0.35);
-	}
 }
 
 .tree-view:focus::before {
